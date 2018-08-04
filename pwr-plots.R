@@ -1,6 +1,6 @@
-# Regetz et al R code defining PWR plot helper functions.
+# Davies et al. R code defining PWR plot helper functions.
 #
-# Jim Regetz (NCEAS)
+# By Jim Regetz (NCEAS)
 
 # simple helper function for rescaling values
 rescale <- function(x, lower=NULL, upper=NULL, na.rm=TRUE) {

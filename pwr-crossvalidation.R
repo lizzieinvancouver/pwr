@@ -1,3 +1,9 @@
+# Davies et al. R code for PWR cross-validation (CV)
+# Code includes f(x)s and CV of Arnell data 
+#
+# By Jim Regetz (NCEAS)
+
+
 # simple function to randomly partition indices 1:n into k equal sized
 # groups (folds)
 fold <- function(n, k) {
@@ -66,8 +72,6 @@ pwr.cv.slope <- function(formula, phy4d, wfun, bwidth, method, holdout) {
 }
 
 
-
-
 # cross-validation of pgls
 pgls.cv <- function(formula, phy4d, holdout) {
     # extract training set from phy4d
@@ -101,8 +105,6 @@ pgls.cv.slope <- function(formula, phy4d, holdout) {
         slope.pgls=pgls$coefficients[[2]])
         )
 }
-
-
 
 
 

@@ -1,11 +1,13 @@
-# Regetz et al R code for Arnell PWR analysis. Run successfully using
+# Davies et al. R code for Arnell PWR analysis. Run successfully using
 # R 2.15.1, with external packages phylobase_0.6.3 and ape_3.0-1.
+# ...and R 3.4.4, with external packages subplex_1.5-2, phylobase_0.8.4, nlme_3.1-131.1. ape_5.0 
 #
-# Jim Regetz (NCEAS)
+# By Jim Regetz (NCEAS)
 
 require(ape)
 require(nlme)
 require(phylobase)
+require(grid)
 source("pwr-functions.R")
 source("pwr-plots.R")
 

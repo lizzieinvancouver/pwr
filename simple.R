@@ -1,7 +1,7 @@
-# Regetz et al R code for generating simple tree/data to illustrate the
+# Davies et al. R code for generating simple tree/data to illustrate the
 # value of PWR over conventional global models like PGLS.
 #
-# Jim Regetz (NCEAS)
+# By Jim Regetz (NCEAS)
 
 require(ape)
 require (grid)

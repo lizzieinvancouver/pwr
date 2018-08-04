@@ -1,12 +1,18 @@
-# Regetz et al R code defining core PWR functions.
+# Davies et al. R code defining core PWR functions.
 #
-# Jim Regetz (NCEAS)
+#  By Jim Regetz (NCEAS)
 
 require(nlme)
 require(phylobase)
 require(subplex)
 
+
+###################
+## Main PWR f(x) ## 
+###################
+
 # top-level function to run pwr
+# requires model formula and phylo4d object (pylogengy+data object)
 pwr <- function(formula, phy4d, which.tips, bw, wfun, verbose=FALSE) {
     if (missing(which.tips)) {
         which.tips <- seq.int(nTips(phy4d))
@@ -29,6 +35,10 @@ pwr <- function(formula, phy4d, which.tips, bw, wfun, verbose=FALSE) {
     attr(ans, "weights") <- wts
     return(ans)
 }
+
+################################
+## f(x)s used within PWR f(x) ##
+################################
 
 # lower-level function to run PWR given weight function and bandwidth
 pwr.wfn <- function(formula, phy4d, wfun, bwidth, holdout=FALSE) {

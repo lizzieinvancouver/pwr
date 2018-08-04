@@ -1,3 +1,9 @@
+# Davies et al. R code for generating simple tree/data to evaluate the
+# performance of PWR across various tree topologies (stemminess and imbalance)
+#
+# By Jim Regetz (NCEAS)
+
+
 require(nlme)
 require(phylobase)
 require(ape)
