@@ -1,5 +1,7 @@
 Appendix 1 from PWR (Davies et al. 'Phylogenetically weighted regression: a method for modeling non-stationarity on evolutionary trees')
+
 R code by Master Regetz
+Questions? Email j.davies@ubc.ca
 
 Files:
 
