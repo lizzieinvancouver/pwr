@@ -19,5 +19,5 @@ pwr-plots.R - defines PWR plot helper functions
 
 pwr-treesims.R - generates simple tree/data to evaluate the performance of PWR across various tree topologies (stemminess and imbalance)
 
-simple.R - generates simple tree/data to illustrate the value of PWR over conventional global models like PGLS.
+simple.R - generates simple tree/data to illustrate the value of PWR over conventional global models like PGLS
 
